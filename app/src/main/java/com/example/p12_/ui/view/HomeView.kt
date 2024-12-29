@@ -48,6 +48,7 @@ import com.example.p12_.ui.customwidget.CostumeTopAppBar
 import com.example.p12_.ui.navigation.DestinasiNavigasi
 import com.example.p12_.ui.viewmodel.HomeUiState
 import com.example.p12_.ui.viewmodel.HomeViewModel
+import com.example.p12_.ui.viewmodel.PenyediaViewModel
 
 object DestinasiHome: DestinasiNavigasi {
     override val route = "home"

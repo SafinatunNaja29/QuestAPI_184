@@ -27,6 +27,7 @@ import com.example.p12_.ui.navigation.DestinasiNavigasi
 import com.example.p12_.ui.viewmodel.InsertUiEvent
 import com.example.p12_.ui.viewmodel.InsertUiState
 import com.example.p12_.ui.viewmodel.InsertViewModel
+import com.example.p12_.ui.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.launch
 
 object DestinasiEntry: DestinasiNavigasi {
