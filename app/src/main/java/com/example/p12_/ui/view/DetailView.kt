@@ -22,7 +22,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.p12_.model.Mahasiswa
 import com.example.p12_.ui.customwidget.CostumeTopAppBar
 import com.example.p12_.ui.navigation.DestinasiNavigasi
@@ -141,5 +143,29 @@ fun ItemDetailMhs(
             Spacer(modifier = Modifier.padding(4.dp))
             ComponentDetailMhs(judul = "Angkatan", isinya = mahasiswa.angkatan)
         }
+    }
+}
+
+@Composable
+fun ComponentDetailMhs(
+    modifier: Modifier = Modifier,
+    judul:String,
+    isinya:String
+){
+    Column(
+        modifier = modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.Start
+    ) {
+        Text(
+            text = "$judul : ",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Gray
+        )
+        Text(
+            text = isinya,
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold
+        )
     }
 }
