@@ -30,7 +30,7 @@ class DetailViewModel(
             try {
                 val result = mahasiswaRepository.getMahasiswaByNim(nim)
                 detailUiState = DetailUiState(
-                    detailUiEvent = result[0].toDetailUiEvent(),
+                    detailUiEvent = result.toDetailUiEvent(),
                     isLoading = false
                 )
             } catch (e: Exception) {
@@ -43,6 +43,7 @@ class DetailViewModel(
         }
     }
 }
+
 
 data class DetailUiState(
     val detailUiEvent: InsertUiEvent = InsertUiEvent(),

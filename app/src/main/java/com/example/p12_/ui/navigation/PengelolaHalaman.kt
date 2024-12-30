@@ -19,8 +19,8 @@ import com.example.p12_.ui.view.UpdateView
 
 @Composable
 fun PengelolaHalaman(
-    modifier: Modifier,
-    navController: NavHostController = rememberNavController()){
+    navController: NavHostController = rememberNavController()
+){
     NavHost(
         navController = navController,
         startDestination = DestinasiHome.route,
