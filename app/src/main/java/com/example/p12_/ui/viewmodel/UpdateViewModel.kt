@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.p12_.model.Mahasiswa
 import com.example.p12_.repository.MahasiswaRepository
+import com.example.p12_.ui.view.DestinasiUpdate
 import kotlinx.coroutines.launch
 
 class UpdateViewModel(
@@ -21,8 +22,6 @@ class UpdateViewModel(
     init{
         viewModelScope.launch {
             updateUIState = mahasiswaRepository.getMahasiswaByNim(_nim)
-                .filterNotNull()
-                .first()
                 .toUIStateMhs()
         }
     }

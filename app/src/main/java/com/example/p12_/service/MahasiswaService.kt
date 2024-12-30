@@ -21,7 +21,7 @@ interface MahasiswaService{
     suspend fun getAllMahasiswa(): List<Mahasiswa>
 
     @GET("baca1mahasiswa.php/{nim}")
-    suspend fun getMahasiswabyNim(@Query("nim") nim:String):Mahasiswa
+    suspend fun getMahasiswaByNim(@Query("nim") nim:String):Mahasiswa
 
     @POST("insertmahasiswa.php")
     suspend fun insertMahasiswa(@Body mahasiswa: Mahasiswa)

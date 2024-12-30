@@ -14,7 +14,7 @@ interface MahasiswaRepository{
 
     suspend fun deleteMahasiswa(nim: String)
 
-    suspend fun getMahasiswabyNim(nim: String): Mahasiswa
+    suspend fun getMahasiswaByNim(nim: String): Mahasiswa
 }
 
 class NetworkMahasiswaRepository(
@@ -47,8 +47,8 @@ class NetworkMahasiswaRepository(
         }
     }
 
-    override suspend fun getMahasiswabyNim(nim: String): Mahasiswa {
-        return mahasiswaApiService.getMahasiswabyNim(nim)
+    override suspend fun getMahasiswaByNim(nim: String): Mahasiswa {
+        return mahasiswaApiService.getMahasiswaByNim(nim)
     }
 
 }
