@@ -25,9 +25,14 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.p12_.model.Mahasiswa
 import com.example.p12_.ui.customwidget.CostumeTopAppBar
 import com.example.p12_.ui.navigation.DestinasiNavigasi
+import com.example.p12_.ui.viewmodel.DetailUiState
+import com.example.p12_.ui.viewmodel.DetailViewModel
+import com.example.p12_.ui.viewmodel.PenyediaViewModel
+import com.example.p12_.ui.viewmodel.toMhs
 
 object DestinasiDetail: DestinasiNavigasi {
     override val route = "detail"
